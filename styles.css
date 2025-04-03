@@ -54,8 +54,16 @@ header {
 main {
     margin-left: 25px;
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .update-log {
     margin-top: 20px;
+}
+
+.megaphone-image {
+    margin-left: 20px;
+    width: 100px;
+    height: auto;
 }

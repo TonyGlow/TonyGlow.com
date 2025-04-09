@@ -2,87 +2,60 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #ffffff, #0000ff); /* White and Blue gradient */
+    background-color: #add8e6; /* Light blue background */
     color: #333;
 }
 
 header {
-    background: rgba(0, 0, 255, 0.7); /* Semi-transparent blue */
+    background-color: #00008b; /* Dark blue */
     color: white;
-    text-align: center;
     padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #add8e6; /* Light blue */
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar h2, .sidebar p {
-    color: white;
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-}
-
-.menu-btn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    transition: color 0.3s;
-}
-
-.menu-btn.open {
-    color: #add8e6; /* Match with the light blue sidebar */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 8px 0;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 255, 0.7); /* Semi-transparent blue */
+    background-color: #00008b; /* Dark blue */
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-a {
-    color: #0000ff; /* Blue links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
